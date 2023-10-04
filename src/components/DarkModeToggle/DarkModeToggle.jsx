@@ -8,7 +8,7 @@ function DarkModeToggle() {
   const { toggle, mode } = useContext(ThemeContext);
 
   return (
-    <div className={styles.container}>
+    <div onClick={toggle} className={styles.container}>
       <div className={styles.icon}>🌙</div>
       <div className={styles.icon}>🌞</div>
       <div

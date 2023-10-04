@@ -9,6 +9,7 @@
   position: relative;
   justify-content: space-between;
   cursor: pointer;
+  user-select: none;
 }
 
 .icon {

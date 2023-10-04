@@ -10,9 +10,10 @@
     "mobile": "next dev -H 0.0.0.0 -p 3000"
   },
   "dependencies": {
+    "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "eslint": "latest",

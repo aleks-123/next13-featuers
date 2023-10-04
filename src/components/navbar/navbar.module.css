@@ -1,19 +1,20 @@
-.container{
+.container {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo{
+.logo {
   font-weight: bold;
-  font-size: 22px
+  font-size: 22px;
 }
 
-.links{
+.links {
   display: flex;
   align-items: center;
-  gap: 20px
+  gap: 20px;
+  user-select: none;
 }
 
 .logout {
