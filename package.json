@@ -10,6 +10,7 @@
     "mobile": "next dev -H 0.0.0.0 -p 3000"
   },
   "dependencies": {
+    "mongoose": "^7.5.3",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
