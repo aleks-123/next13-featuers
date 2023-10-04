@@ -9,7 +9,7 @@ function Portfolio() {
         <Link href='/portfolio/illustrations' className={styles.item}>
           <span className={styles.title}>Ilustrations</span>
         </Link>
-        <Link href='/portfolio/website' className={styles.item}>
+        <Link href='/portfolio/websites' className={styles.item}>
           <span className={styles.title}>Websites</span>
         </Link>
         <Link href='/portfolio/applications' className={styles.item}>
