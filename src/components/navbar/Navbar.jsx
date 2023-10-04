@@ -1,49 +1,59 @@
-import Link from "next/link";
+'use client';
+
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
+import styles from './navbar.module.css';
+
+import Link from 'next/link';
 
 const links = [
   {
     id: 1,
-    title: "Home",
-    url: "/",
+    title: 'Home',
+    url: '/',
   },
   {
     id: 2,
-    title: "Portfolio",
-    url: "/portfolio",
+    title: 'Portfolio',
+    url: '/portfolio',
   },
   {
     id: 3,
-    title: "Blog",
-    url: "/blog",
+    title: 'Blog',
+    url: '/blog',
   },
   {
     id: 4,
-    title: "About",
-    url: "/about",
+    title: 'About',
+    url: '/about',
   },
   {
     id: 5,
-    title: "Contact",
-    url: "/contact",
+    title: 'Contact',
+    url: '/contact',
   },
   {
     id: 6,
-    title: "Dashboard",
-    url: "/dashboard",
+    title: 'Dashboard',
+    url: '/dashboard',
   },
 ];
 
 function Navbar() {
   return (
-    <div>
-      <Link href="/">Aleks</Link>
-      <div>
+    <div className={styles.container}>
+      <Link href='/' className={styles.logo}>
+        Aleks
+      </Link>
+      <div className={styles.links}>
+        <DarkModeToggle />
         {links.map((link) => (
-          <Link key={link.id} href={link.url}>
+          <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
           </Link>
         ))}
-        <button></button>
+        <button className={styles.logout} onClick={() => console.log('logout')}>
+          Logout
+        </button>
       </div>
     </div>
   );
