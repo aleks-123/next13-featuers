@@ -30,7 +30,6 @@ function Dashboard() {
     'https://jsonplaceholder.typicode.com/posts',
     fetcher
   );
-  console.log(data);
 
   return <div className={styles.container}>Dashboard</div>;
 }
