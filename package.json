@@ -10,8 +10,10 @@
     "mobile": "next dev -H 0.0.0.0 -p 3000"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "mongoose": "^7.5.3",
     "next": "latest",
+    "next-auth": "^4.23.2",
     "react": "latest",
     "react-dom": "latest",
     "swr": "^2.2.4"
