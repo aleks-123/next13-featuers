@@ -13,7 +13,7 @@ function Dashboard() {
 
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
-  console.log(session?.data);
+  console.log(session.status);
   const { data, mutate, error, isLoading } = useSWR(
     `/api/posts?username=${session?.data?.user.name}`,
     fetcher
@@ -22,6 +22,7 @@ function Dashboard() {
   if (session.status === 'loading') {
     return <p>Loading...</p>;
   }
+
   if (session.status === 'unauthenticated') {
     router?.push('/dashboard/login');
   }

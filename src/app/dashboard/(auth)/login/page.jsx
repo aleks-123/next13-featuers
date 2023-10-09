@@ -18,11 +18,8 @@ function Login() {
   if (session.status === 'loading') {
     return <p>Loading...</p>;
   }
-  if (session.status === 'unauthenticated') {
-    router?.push('/dashboard');
-  }
   if (session.status === 'authenticated') {
-    return <div className={styles.container}>Dashboard</div>;
+    router?.push('/dashboard');
   }
 
   return (
