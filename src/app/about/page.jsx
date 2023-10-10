@@ -4,6 +4,7 @@ import Button from '@/components/button/Button';
 
 function About() {
   return (
+    //about
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <Image
